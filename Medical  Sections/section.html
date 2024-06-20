@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --primary-color: #F4F1DE;
+            --secondary-color: #E07A5F;
+            --accent-color: #3D405B;
+            --muted-color: #81B29A;
+            --highlight-color: #F2CC8F;
+            --button-red: #E74C3C;
+            --button-green: #2ECC71;
+        }
+
+        * {
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(90deg, rgba(17, 46, 69, 1) 0%, rgba(22, 127, 120, 1) 100%);
+            width: 100%;
+            height: 380px;
+            overflow: hidden;
+        }
+
+        .cont1 {
+            margin: 50px 70px;
+            color: white;
+            max-width: 50%;
+        }
+
+        .cont1 h5 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+
+        .cont1 h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .cont1 p {
+            font-size: 1em;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .cont1 button {
+            display: flex;
+            gap: 10px;
+        }
+
+        .cont1 .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .cont1 .btn.danger {
+            background-color: var(--button-red);
+            color: white;
+        }
+        .cont1 .btn.danger:hover {
+            background-color: transparent;
+            color: var(--button-red);
+            border: 2px solid #E74C3C;
+        }
+
+        .cont1 .btn.none {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        .cont1 .btn.none:hover {
+            background-color: var(--button-red);
+            color: white;
+        }
+
+        .cont2 img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .cont2 {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <div class="cont1">
+            <h5>GET STARTED</h5>
+            <h2>20+ YEARS OF EXPERTISE IN HEALTH CARE</h2>
+            <p>Two decades of healthcare excellence,<br>combining experience and expertise to provide superior medical care <br> and patient well-being.</p>
+            <div style="display: flex;">
+                <button class="btn danger">Get Started</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="btn none">Contact Us</button>
+            </div>
+        </div>
+        <div class="cont2">
+            <img src="doctorr.png" alt="doctor img">
+        </div>
+    </section>
+</body>
+</html>
